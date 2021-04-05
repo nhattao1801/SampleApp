@@ -30,16 +30,16 @@ namespace SampleApp
         private void button1_Click(object sender, EventArgs e)
         {
 
-/*            View_Result fm = new View_Result();
-            if (this.textBox2_TextChanged.Text == "admin" && this.textBox1_TextChanged.Text == "123")
-               {
+            View_Result fm = new View_Result();
+            if (this.txt_username.Text == "admin" && this.txt_password.Text == "123")
+            {
                 fm.Show();
-               }*/
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            
+            Application.Exit();
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e) //acc

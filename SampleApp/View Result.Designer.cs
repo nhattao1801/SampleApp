@@ -55,6 +55,7 @@ namespace SampleApp
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Select = new System.Windows.Forms.ComboBox();
             this.File.SuspendLayout();
             this.Setting.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -252,11 +253,20 @@ namespace SampleApp
             this.dataGridView1.Size = new System.Drawing.Size(776, 355);
             this.dataGridView1.TabIndex = 10;
             // 
+            // Select
+            // 
+            this.Select.FormattingEnabled = true;
+            this.Select.Location = new System.Drawing.Point(58, 24);
+            this.Select.Name = "Select";
+            this.Select.Size = new System.Drawing.Size(148, 21);
+            this.Select.TabIndex = 11;
+            // 
             // View_Result
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Select);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -302,5 +312,6 @@ namespace SampleApp
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.ComboBox Select;
     }
 }

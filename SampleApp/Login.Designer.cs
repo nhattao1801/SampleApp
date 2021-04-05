@@ -50,8 +50,8 @@ namespace SampleApp
             this.subjectWeightToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.txt_username = new System.Windows.Forms.TextBox();
             this.txt_password = new System.Windows.Forms.TextBox();
-            this.text_username = new System.Windows.Forms.TextBox();
             this.btn_Login = new System.Windows.Forms.Button();
             this.btn_Cancel = new System.Windows.Forms.Button();
             this.File.SuspendLayout();
@@ -208,21 +208,21 @@ namespace SampleApp
             this.label2.TabIndex = 4;
             this.label2.Text = "Password\r\n";
             // 
+            // txt_username
+            // 
+            this.txt_username.Location = new System.Drawing.Point(216, 108);
+            this.txt_username.Name = "txt_username";
+            this.txt_username.Size = new System.Drawing.Size(224, 20);
+            this.txt_username.TabIndex = 5;
+            this.txt_username.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
             // txt_password
             // 
-            this.txt_password.Location = new System.Drawing.Point(216, 159);
+            this.txt_password.Location = new System.Drawing.Point(216, 157);
             this.txt_password.Name = "txt_password";
             this.txt_password.Size = new System.Drawing.Size(224, 20);
-            this.txt_password.TabIndex = 5;
-            this.txt_password.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // text_username
-            // 
-            this.text_username.Location = new System.Drawing.Point(216, 110);
-            this.text_username.Name = "text_username";
-            this.text_username.Size = new System.Drawing.Size(224, 20);
-            this.text_username.TabIndex = 6;
-            this.text_username.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.txt_password.TabIndex = 6;
+            this.txt_password.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // btn_Login
             // 
@@ -253,8 +253,8 @@ namespace SampleApp
             this.ClientSize = new System.Drawing.Size(570, 338);
             this.Controls.Add(this.btn_Cancel);
             this.Controls.Add(this.btn_Login);
-            this.Controls.Add(this.text_username);
             this.Controls.Add(this.txt_password);
+            this.Controls.Add(this.txt_username);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Login";
@@ -287,8 +287,8 @@ namespace SampleApp
         private System.Windows.Forms.ToolStripMenuItem englishToolStripMenuItem;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txt_username;
         private System.Windows.Forms.TextBox txt_password;
-        private System.Windows.Forms.TextBox text_username;
         private System.Windows.Forms.Button btn_Login;
         private System.Windows.Forms.Button btn_Cancel;
         private System.Windows.Forms.ToolStripMenuItem subjectWeightToolStripMenuItem;
