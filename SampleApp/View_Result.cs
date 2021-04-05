@@ -20,6 +20,10 @@ namespace SampleApp
         private void btn_details_Click_1(object sender, EventArgs e)
         {
             DetailsResult fm = new DetailsResult();
+            this.Visible = false;
+            fm.ShowDialog();
+            this.Visible = true;
+            this.Close();
         }
     }
 }

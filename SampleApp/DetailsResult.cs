@@ -20,6 +20,10 @@ namespace SampleApp
         private void btn_back_Click(object sender, EventArgs e)
         {
             View_Result fm = new View_Result();
+            this.Visible = false;
+            fm.ShowDialog();
+            this.Visible = true;
+            this.Close();
         }
     }
 }
