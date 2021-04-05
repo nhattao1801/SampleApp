@@ -27,7 +27,7 @@ namespace SampleApp
         private void btn_Cancel_Click(object sender, EventArgs e)
         {
             DialogResult dr;
-            dr = MessageBox.Show("Bạn có muốn thoát khỏi chương trình không ?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            dr = MessageBox.Show("You must saved before closing?", "OK", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (dr == DialogResult.Yes)
             {
                 Application.Exit();
