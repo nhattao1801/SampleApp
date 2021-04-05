@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CreateCourse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateCourse.Designer.cs">
+      <DependentUpon>CreateCourse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetailsResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetailsResult.Designer.cs">
+      <DependentUpon>DetailsResult.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,12 +66,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="View Result.cs">
+    <Compile Include="View_Result.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View Result.Designer.cs">
-      <DependentUpon>View Result.cs</DependentUpon>
+    <Compile Include="View_Result.Designer.cs">
+      <DependentUpon>View_Result.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="CreateCourse.resx">
+      <DependentUpon>CreateCourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetailsResult.resx">
+      <DependentUpon>DetailsResult.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -72,8 +90,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="View Result.resx">
-      <DependentUpon>View Result.cs</DependentUpon>
+    <EmbeddedResource Include="View_Result.resx">
+      <DependentUpon>View_Result.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

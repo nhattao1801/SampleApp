@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace SampleApp
 {
-    public partial class View_Result : Form
+    public partial class DetailsResult : Form
     {
-        public View_Result()
+        public DetailsResult()
         {
             InitializeComponent();
+        }
+
+        private void btn_back_Click(object sender, EventArgs e)
+        {
+            View_Result fm = new View_Result();
         }
     }
 }

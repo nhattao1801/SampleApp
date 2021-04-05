@@ -50,10 +50,10 @@ namespace SampleApp
             this.subjectWeightToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.txt_username = new System.Windows.Forms.TextBox();
-            this.txt_password = new System.Windows.Forms.TextBox();
-            this.btn_Login = new System.Windows.Forms.Button();
             this.btn_Cancel = new System.Windows.Forms.Button();
+            this.btn_Login = new System.Windows.Forms.Button();
+            this.txt_password = new System.Windows.Forms.TextBox();
+            this.txt_username = new System.Windows.Forms.TextBox();
             this.File.SuspendLayout();
             this.Setting.SuspendLayout();
             this.SuspendLayout();
@@ -208,53 +208,51 @@ namespace SampleApp
             this.label2.TabIndex = 4;
             this.label2.Text = "Password\r\n";
             // 
-            // txt_username
-            // 
-            this.txt_username.Location = new System.Drawing.Point(216, 108);
-            this.txt_username.Name = "txt_username";
-            this.txt_username.Size = new System.Drawing.Size(224, 20);
-            this.txt_username.TabIndex = 5;
-            this.txt_username.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // txt_password
-            // 
-            this.txt_password.Location = new System.Drawing.Point(216, 157);
-            this.txt_password.Name = "txt_password";
-            this.txt_password.Size = new System.Drawing.Size(224, 20);
-            this.txt_password.TabIndex = 6;
-            this.txt_password.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
-            // 
-            // btn_Login
-            // 
-            this.btn_Login.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btn_Login.Location = new System.Drawing.Point(48, 256);
-            this.btn_Login.Name = "btn_Login";
-            this.btn_Login.Size = new System.Drawing.Size(127, 35);
-            this.btn_Login.TabIndex = 7;
-            this.btn_Login.Text = "OK";
-            this.btn_Login.UseVisualStyleBackColor = true;
-            this.btn_Login.Click += new System.EventHandler(this.button1_Click);
-            // 
             // btn_Cancel
             // 
             this.btn_Cancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btn_Cancel.Location = new System.Drawing.Point(382, 256);
+            this.btn_Cancel.Location = new System.Drawing.Point(411, 256);
             this.btn_Cancel.Name = "btn_Cancel";
             this.btn_Cancel.Size = new System.Drawing.Size(127, 35);
             this.btn_Cancel.TabIndex = 8;
             this.btn_Cancel.Text = "Cancel";
             this.btn_Cancel.UseVisualStyleBackColor = true;
-            this.btn_Cancel.Click += new System.EventHandler(this.button2_Click);
+            this.btn_Cancel.Click += new System.EventHandler(this.btn_Cancel_Click);
+            // 
+            // btn_Login
+            // 
+            this.btn_Login.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btn_Login.Location = new System.Drawing.Point(59, 256);
+            this.btn_Login.Name = "btn_Login";
+            this.btn_Login.Size = new System.Drawing.Size(127, 35);
+            this.btn_Login.TabIndex = 9;
+            this.btn_Login.Text = "OK";
+            this.btn_Login.UseVisualStyleBackColor = true;
+            this.btn_Login.Click += new System.EventHandler(this.btn_Login_Click);
+            // 
+            // txt_password
+            // 
+            this.txt_password.Location = new System.Drawing.Point(216, 159);
+            this.txt_password.Name = "txt_password";
+            this.txt_password.Size = new System.Drawing.Size(224, 20);
+            this.txt_password.TabIndex = 10;
+            // 
+            // txt_username
+            // 
+            this.txt_username.Location = new System.Drawing.Point(216, 108);
+            this.txt_username.Name = "txt_username";
+            this.txt_username.Size = new System.Drawing.Size(224, 20);
+            this.txt_username.TabIndex = 11;
             // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(570, 338);
-            this.Controls.Add(this.btn_Cancel);
-            this.Controls.Add(this.btn_Login);
-            this.Controls.Add(this.txt_password);
             this.Controls.Add(this.txt_username);
+            this.Controls.Add(this.txt_password);
+            this.Controls.Add(this.btn_Login);
+            this.Controls.Add(this.btn_Cancel);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Login";
@@ -287,11 +285,11 @@ namespace SampleApp
         private System.Windows.Forms.ToolStripMenuItem englishToolStripMenuItem;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txt_username;
-        private System.Windows.Forms.TextBox txt_password;
-        private System.Windows.Forms.Button btn_Login;
-        private System.Windows.Forms.Button btn_Cancel;
         private System.Windows.Forms.ToolStripMenuItem subjectWeightToolStripMenuItem;
+        private System.Windows.Forms.Button btn_Cancel;
+        private System.Windows.Forms.Button btn_Login;
+        private System.Windows.Forms.TextBox txt_password;
+        private System.Windows.Forms.TextBox txt_username;
     }
 }
 

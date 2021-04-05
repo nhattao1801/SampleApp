@@ -9,3 +9,5 @@ C:\Users\Test\Desktop\SampleApp\SampleApp\obj\Debug\SampleApp.csproj.CoreCompile
 C:\Users\Test\Desktop\SampleApp\SampleApp\obj\Debug\SampleApp.exe
 C:\Users\Test\Desktop\SampleApp\SampleApp\obj\Debug\SampleApp.pdb
 C:\Users\Test\Desktop\SampleApp\SampleApp\obj\Debug\SampleApp.Login.resources
+C:\Users\Test\Desktop\SampleApp\SampleApp\obj\Debug\SampleApp.CreateCourse.resources
+C:\Users\Test\Desktop\SampleApp\SampleApp\obj\Debug\SampleApp.DetailsResult.resources

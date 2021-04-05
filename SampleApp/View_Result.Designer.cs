@@ -47,7 +47,7 @@ namespace SampleApp
             this.yellowToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.blueToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Edit = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_details = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -55,7 +55,7 @@ namespace SampleApp
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Select = new System.Windows.Forms.ComboBox();
+            this.cb_Select = new System.Windows.Forms.ComboBox();
             this.File.SuspendLayout();
             this.Setting.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -182,14 +182,15 @@ namespace SampleApp
             this.Edit.Size = new System.Drawing.Size(61, 4);
             this.Edit.Text = "Edit";
             // 
-            // button1
+            // btn_details
             // 
-            this.button1.Location = new System.Drawing.Point(713, 22);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Details";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_details.Location = new System.Drawing.Point(713, 22);
+            this.btn_details.Name = "btn_details";
+            this.btn_details.Size = new System.Drawing.Size(75, 23);
+            this.btn_details.TabIndex = 3;
+            this.btn_details.Text = "Details";
+            this.btn_details.UseVisualStyleBackColor = true;
+            this.btn_details.Click += new System.EventHandler(this.btn_details_Click_1);
             // 
             // label1
             // 
@@ -203,7 +204,7 @@ namespace SampleApp
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(212, 27);
+            this.label2.Location = new System.Drawing.Point(221, 27);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(137, 13);
             this.label2.TabIndex = 5;
@@ -212,7 +213,7 @@ namespace SampleApp
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(364, 27);
+            this.label3.Location = new System.Drawing.Point(373, 27);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(49, 13);
             this.label3.TabIndex = 6;
@@ -221,7 +222,7 @@ namespace SampleApp
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(429, 27);
+            this.label4.Location = new System.Drawing.Point(438, 27);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(135, 13);
             this.label4.TabIndex = 7;
@@ -230,7 +231,7 @@ namespace SampleApp
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(583, 27);
+            this.label5.Location = new System.Drawing.Point(592, 27);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(97, 13);
             this.label5.TabIndex = 8;
@@ -253,20 +254,20 @@ namespace SampleApp
             this.dataGridView1.Size = new System.Drawing.Size(776, 355);
             this.dataGridView1.TabIndex = 10;
             // 
-            // Select
+            // cb_Select
             // 
-            this.Select.FormattingEnabled = true;
-            this.Select.Location = new System.Drawing.Point(58, 24);
-            this.Select.Name = "Select";
-            this.Select.Size = new System.Drawing.Size(148, 21);
-            this.Select.TabIndex = 11;
+            this.cb_Select.FormattingEnabled = true;
+            this.cb_Select.Location = new System.Drawing.Point(58, 24);
+            this.cb_Select.Name = "cb_Select";
+            this.cb_Select.Size = new System.Drawing.Size(148, 21);
+            this.cb_Select.TabIndex = 11;
             // 
             // View_Result
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.Select);
+            this.Controls.Add(this.cb_Select);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -274,9 +275,9 @@ namespace SampleApp
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_details);
             this.Name = "View_Result";
-            this.Text = "View_Result";
+            this.Text = "Happy Testing - Training management - v1.0.0";
             this.File.ResumeLayout(false);
             this.Setting.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -304,7 +305,7 @@ namespace SampleApp
         private System.Windows.Forms.ToolStripMenuItem yellowToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem blueToolStripMenuItem;
         private System.Windows.Forms.ContextMenuStrip Edit;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_details;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -312,6 +313,6 @@ namespace SampleApp
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.ComboBox Select;
+        private System.Windows.Forms.ComboBox cb_Select;
     }
 }
