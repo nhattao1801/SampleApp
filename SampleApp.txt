@@ -1,0 +1,49 @@
+
+1	Log in
+
+ File : submenu -> nhap xuat file excel
+ Setting : 
+  + Lang : Japan, Eng => chuyển sang tiếng Anh - Nhật -> trans
+  + Themes : chỉnh kích thước chữ, thêm màu
+  + Subject Weight : bảng điểm
+
+
+2	View Result (right after log in)
+						
+ Btn Details : => dan toi Detailed Training Result
+ Support Sort and Filter
+ Rating based on Final Point (Subject Weight)
+
+ ++ Final point= Manual*2% + Automation*3%+ OJT*5% ++ 
+
+
+3	Edit (Create a new Course; Edit a Course; Update training result)	
+	
+ 3.1 Create a new course											
+	Course ID : ko trung lap
+	Status : selection
+	Rows : them, xoa
+	Cancel : hien thi thong bao neu user ko SAVE lai 
+
+ 3.2 Edit a Course
+	Result : Update Training Result
+	Cancel : hien thi thong bao neu user ko SAVE lai 
+
+ 3.3 Update training result
+	Course ID : Chỉ cho phép sửa đổi các khóa học chưa hoàn thành 
+=> dựa theo mục Status :Planning và Closed thì kko đc SỬA, Running thì đc nhập sửa
+
+	Cancel : hien thi thong bao neu user ko SAVE lai 
+
+
+4. Detailed Training Result
+
+ menu OJT : Conclusion has only 3 value: 1- deny, 3-accept, 5-welcome => tự nhập
+ 
+
+5. Setting - Subject Weight
+
+ Automation : TA or Selenium (chon diem cao hon trong 2 cai)
+ Cancel : hien thi thong bao neu user ko SAVE lai 
+	
+

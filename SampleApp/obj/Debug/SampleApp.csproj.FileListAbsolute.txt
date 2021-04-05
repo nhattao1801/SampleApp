@@ -1,0 +1,11 @@
+C:\Users\Test\Desktop\SampleApp\SampleApp\bin\Debug\SampleApp.exe.config
+C:\Users\Test\Desktop\SampleApp\SampleApp\bin\Debug\SampleApp.exe
+C:\Users\Test\Desktop\SampleApp\SampleApp\bin\Debug\SampleApp.pdb
+C:\Users\Test\Desktop\SampleApp\SampleApp\obj\Debug\SampleApp.csprojAssemblyReference.cache
+C:\Users\Test\Desktop\SampleApp\SampleApp\obj\Debug\SampleApp.Form1.resources
+C:\Users\Test\Desktop\SampleApp\SampleApp\obj\Debug\SampleApp.Properties.Resources.resources
+C:\Users\Test\Desktop\SampleApp\SampleApp\obj\Debug\SampleApp.View_Result.resources
+C:\Users\Test\Desktop\SampleApp\SampleApp\obj\Debug\SampleApp.csproj.GenerateResource.cache
+C:\Users\Test\Desktop\SampleApp\SampleApp\obj\Debug\SampleApp.csproj.CoreCompileInputs.cache
+C:\Users\Test\Desktop\SampleApp\SampleApp\obj\Debug\SampleApp.exe
+C:\Users\Test\Desktop\SampleApp\SampleApp\obj\Debug\SampleApp.pdb
