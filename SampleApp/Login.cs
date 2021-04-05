@@ -35,6 +35,10 @@ namespace SampleApp
             {
                 fm.Show();
             }
+            else
+            {
+                MessageBox.Show("Wrong!");
+            }    
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -42,12 +46,12 @@ namespace SampleApp
             Application.Exit();
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e) //acc
+        private void textBox2_TextChanged(object sender, EventArgs e) //pass
         {
 
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e) //pass
+        private void textBox1_TextChanged(object sender, EventArgs e) //acc
         {
 
         }
