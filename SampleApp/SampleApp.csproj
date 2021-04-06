@@ -58,6 +58,21 @@
     <Compile Include="DetailsResult.Designer.cs">
       <DependentUpon>DetailsResult.cs</DependentUpon>
     </Compile>
+    <Compile Include="Lang\MyResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MyResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Lang\MyResource.en-US.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MyResource.en-US.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Lang\MyResource.jp-Japan.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MyResource.jp-Japan.resx</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,6 +92,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DetailsResult.resx">
       <DependentUpon>DetailsResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lang\MyResource.en-US.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>MyResource.en-US.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lang\MyResource.jp-Japan.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>MyResource.jp-Japan.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lang\MyResource.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>MyResource.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

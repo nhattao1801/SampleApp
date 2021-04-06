@@ -25,5 +25,15 @@ namespace SampleApp
             this.Visible = true;
             this.Close();
         }
+
+        private void File_Opening(object sender, CancelEventArgs e)
+        {
+
+        }
+
+        private void themesNormalBigToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
