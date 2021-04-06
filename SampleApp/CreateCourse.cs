@@ -37,6 +37,20 @@ namespace SampleApp
                 /*e.Cancel = true;*/
             }
         }
-}
+
+        private void item_color_Click(object sender, EventArgs e)
+        {
+            ColorDialog dlg = new ColorDialog(); //Khởi tạo đối tượng ColorDialog 
+            dlg.ShowDialog(); //Hiển thị hộp thoại
+
+            if (dlg.ShowDialog() == DialogResult.OK) //Nếu nhấp vào nút OK trên hộp thoại
+            {
+                string str = null; //Khai báo biến str
+                str = dlg.Color.Name; //Trả lại tên của màu đã lựa chọn
+                MessageBox.Show(str); //Hiển thị lên MessageBox
+            }
+        }
+
+    }
 
 }

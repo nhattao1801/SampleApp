@@ -51,7 +51,10 @@ namespace SampleApp
             this.font_big = new System.Windows.Forms.ToolStripMenuItem();
             this.font_normal = new System.Windows.Forms.ToolStripMenuItem();
             this.item_color = new System.Windows.Forms.ToolStripMenuItem();
+            this.cl_pink = new System.Windows.Forms.ToolStripMenuItem();
+            this.cl_blue = new System.Windows.Forms.ToolStripMenuItem();
             this.mn_suwe = new System.Windows.Forms.ToolStripMenuItem();
+            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.mn_bar.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -214,27 +217,44 @@ namespace SampleApp
             // font_small
             // 
             this.font_small.Name = "font_small";
-            this.font_small.Size = new System.Drawing.Size(114, 22);
+            this.font_small.Size = new System.Drawing.Size(180, 22);
             this.font_small.Text = "Small";
             // 
             // font_big
             // 
             this.font_big.Name = "font_big";
-            this.font_big.Size = new System.Drawing.Size(114, 22);
+            this.font_big.Size = new System.Drawing.Size(180, 22);
             this.font_big.Text = "Big";
             // 
             // font_normal
             // 
             this.font_normal.Name = "font_normal";
-            this.font_normal.Size = new System.Drawing.Size(114, 22);
+            this.font_normal.Size = new System.Drawing.Size(180, 22);
             this.font_normal.Text = "Normal";
             // 
             // item_color
             // 
+            this.item_color.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cl_pink,
+            this.cl_blue});
             this.item_color.Name = "item_color";
             this.item_color.Size = new System.Drawing.Size(180, 22);
-            this.item_color.Text = "Color";
+            this.item_color.Text = "Back Color";
             this.item_color.Click += new System.EventHandler(this.item_color_Click);
+            // 
+            // cl_pink
+            // 
+            this.cl_pink.Name = "cl_pink";
+            this.cl_pink.Size = new System.Drawing.Size(180, 22);
+            this.cl_pink.Text = "Pink";
+            this.cl_pink.Click += new System.EventHandler(this.cl_pink_Click);
+            // 
+            // cl_blue
+            // 
+            this.cl_blue.Name = "cl_blue";
+            this.cl_blue.Size = new System.Drawing.Size(180, 22);
+            this.cl_blue.Text = "Bue";
+            this.cl_blue.Click += new System.EventHandler(this.cl_blue_Click);
             // 
             // mn_suwe
             // 
@@ -288,6 +308,9 @@ namespace SampleApp
         private System.Windows.Forms.ToolStripMenuItem font_small;
         private System.Windows.Forms.ToolStripMenuItem font_big;
         private System.Windows.Forms.ToolStripMenuItem font_normal;
+        private System.Windows.Forms.ColorDialog colorDialog1;
+        private System.Windows.Forms.ToolStripMenuItem cl_pink;
+        private System.Windows.Forms.ToolStripMenuItem cl_blue;
     }
 }
 
