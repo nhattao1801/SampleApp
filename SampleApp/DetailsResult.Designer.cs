@@ -45,6 +45,8 @@ namespace SampleApp
             this.font_big = new System.Windows.Forms.ToolStripMenuItem();
             this.font_normal = new System.Windows.Forms.ToolStripMenuItem();
             this.item_color = new System.Windows.Forms.ToolStripMenuItem();
+            this.cl_pink = new System.Windows.Forms.ToolStripMenuItem();
+            this.cl_blue = new System.Windows.Forms.ToolStripMenuItem();
             this.mn_suwe = new System.Windows.Forms.ToolStripMenuItem();
             this.mn_bar.SuspendLayout();
             this.SuspendLayout();
@@ -145,7 +147,7 @@ namespace SampleApp
             this.font_big,
             this.font_normal});
             this.item_font.Name = "item_font";
-            this.item_font.Size = new System.Drawing.Size(103, 22);
+            this.item_font.Size = new System.Drawing.Size(131, 22);
             this.item_font.Text = "Font";
             // 
             // font_small
@@ -168,9 +170,24 @@ namespace SampleApp
             // 
             // item_color
             // 
+            this.item_color.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cl_pink,
+            this.cl_blue});
             this.item_color.Name = "item_color";
-            this.item_color.Size = new System.Drawing.Size(103, 22);
-            this.item_color.Text = "Color";
+            this.item_color.Size = new System.Drawing.Size(131, 22);
+            this.item_color.Text = "Back Color";
+            // 
+            // cl_pink
+            // 
+            this.cl_pink.Name = "cl_pink";
+            this.cl_pink.Size = new System.Drawing.Size(97, 22);
+            this.cl_pink.Text = "Pink";
+            // 
+            // cl_blue
+            // 
+            this.cl_blue.Name = "cl_blue";
+            this.cl_blue.Size = new System.Drawing.Size(97, 22);
+            this.cl_blue.Text = "Bue";
             // 
             // mn_suwe
             // 
@@ -212,6 +229,8 @@ namespace SampleApp
         private System.Windows.Forms.ToolStripMenuItem font_big;
         private System.Windows.Forms.ToolStripMenuItem font_normal;
         private System.Windows.Forms.ToolStripMenuItem item_color;
+        private System.Windows.Forms.ToolStripMenuItem cl_pink;
+        private System.Windows.Forms.ToolStripMenuItem cl_blue;
         private System.Windows.Forms.ToolStripMenuItem mn_suwe;
     }
 }

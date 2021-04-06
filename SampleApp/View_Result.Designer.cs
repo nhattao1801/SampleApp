@@ -37,6 +37,16 @@ namespace SampleApp
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Manual = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Selenium = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TA = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.OJTProject = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.OJT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FinalPoint = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Rating = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Remarks = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cb_Select = new System.Windows.Forms.ComboBox();
             this.mn_bar = new System.Windows.Forms.MenuStrip();
             this.tool_file = new System.Windows.Forms.ToolStripMenuItem();
@@ -53,17 +63,9 @@ namespace SampleApp
             this.font_big = new System.Windows.Forms.ToolStripMenuItem();
             this.font_normal = new System.Windows.Forms.ToolStripMenuItem();
             this.item_color = new System.Windows.Forms.ToolStripMenuItem();
+            this.cl_pink = new System.Windows.Forms.ToolStripMenuItem();
+            this.cl_blue = new System.Windows.Forms.ToolStripMenuItem();
             this.mn_suwe = new System.Windows.Forms.ToolStripMenuItem();
-            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Manual = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Selenium = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TA = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.OJTProject = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.OJT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.FinalPoint = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Rating = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Remarks = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.mn_bar.SuspendLayout();
             this.SuspendLayout();
@@ -150,6 +152,56 @@ namespace SampleApp
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(833, 357);
             this.dataGridView1.TabIndex = 10;
+            // 
+            // ID
+            // 
+            this.ID.HeaderText = "ID";
+            this.ID.Name = "ID";
+            // 
+            // Name
+            // 
+            this.Name.HeaderText = "Name";
+            this.Name.Name = "Name";
+            // 
+            // Manual
+            // 
+            this.Manual.HeaderText = "Manual";
+            this.Manual.Name = "Manual";
+            // 
+            // Selenium
+            // 
+            this.Selenium.HeaderText = "Selenium";
+            this.Selenium.Name = "Selenium";
+            // 
+            // TA
+            // 
+            this.TA.HeaderText = "TA";
+            this.TA.Name = "TA";
+            // 
+            // OJTProject
+            // 
+            this.OJTProject.HeaderText = "OJT Project";
+            this.OJTProject.Name = "OJTProject";
+            // 
+            // OJT
+            // 
+            this.OJT.HeaderText = "OJT";
+            this.OJT.Name = "OJT";
+            // 
+            // FinalPoint
+            // 
+            this.FinalPoint.HeaderText = "Final Point";
+            this.FinalPoint.Name = "FinalPoint";
+            // 
+            // Rating
+            // 
+            this.Rating.HeaderText = "Rating";
+            this.Rating.Name = "Rating";
+            // 
+            // Remarks
+            // 
+            this.Remarks.HeaderText = "Remarks";
+            this.Remarks.Name = "Remarks";
             // 
             // cb_Select
             // 
@@ -245,7 +297,7 @@ namespace SampleApp
             this.font_big,
             this.font_normal});
             this.item_font.Name = "item_font";
-            this.item_font.Size = new System.Drawing.Size(103, 22);
+            this.item_font.Size = new System.Drawing.Size(131, 22);
             this.item_font.Text = "Font";
             // 
             // font_small
@@ -268,65 +320,30 @@ namespace SampleApp
             // 
             // item_color
             // 
+            this.item_color.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cl_pink,
+            this.cl_blue});
             this.item_color.Name = "item_color";
-            this.item_color.Size = new System.Drawing.Size(103, 22);
-            this.item_color.Text = "Color";
+            this.item_color.Size = new System.Drawing.Size(131, 22);
+            this.item_color.Text = "Back Color";
+            // 
+            // cl_pink
+            // 
+            this.cl_pink.Name = "cl_pink";
+            this.cl_pink.Size = new System.Drawing.Size(97, 22);
+            this.cl_pink.Text = "Pink";
+            // 
+            // cl_blue
+            // 
+            this.cl_blue.Name = "cl_blue";
+            this.cl_blue.Size = new System.Drawing.Size(97, 22);
+            this.cl_blue.Text = "Bue";
             // 
             // mn_suwe
             // 
             this.mn_suwe.Name = "mn_suwe";
             this.mn_suwe.Size = new System.Drawing.Size(154, 22);
             this.mn_suwe.Text = "Subject Weight";
-            // 
-            // ID
-            // 
-            this.ID.HeaderText = "ID";
-            this.ID.Name = "ID";
-            // 
-            // Name
-            // 
-            this.Name.HeaderText = "Name";
-            this.Name.Name = "Name";
-            // 
-            // Manual
-            // 
-            this.Manual.HeaderText = "Manual";
-            this.Manual.Name = "Manual";
-            // 
-            // Selenium
-            // 
-            this.Selenium.HeaderText = "Selenium";
-            this.Selenium.Name = "Selenium";
-            // 
-            // TA
-            // 
-            this.TA.HeaderText = "TA";
-            this.TA.Name = "TA";
-            // 
-            // OJTProject
-            // 
-            this.OJTProject.HeaderText = "OJT Project";
-            this.OJTProject.Name = "OJTProject";
-            // 
-            // OJT
-            // 
-            this.OJT.HeaderText = "OJT";
-            this.OJT.Name = "OJT";
-            // 
-            // FinalPoint
-            // 
-            this.FinalPoint.HeaderText = "Final Point";
-            this.FinalPoint.Name = "FinalPoint";
-            // 
-            // Rating
-            // 
-            this.Rating.HeaderText = "Rating";
-            this.Rating.Name = "Rating";
-            // 
-            // Remarks
-            // 
-            this.Remarks.HeaderText = "Remarks";
-            this.Remarks.Name = "Remarks";
             // 
             // View_Result
             // 
@@ -363,6 +380,16 @@ namespace SampleApp
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.ComboBox cb_Select;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Manual;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Selenium;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TA;
+        private System.Windows.Forms.DataGridViewTextBoxColumn OJTProject;
+        private System.Windows.Forms.DataGridViewTextBoxColumn OJT;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FinalPoint;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Rating;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Remarks;
         private System.Windows.Forms.MenuStrip mn_bar;
         private System.Windows.Forms.ToolStripMenuItem tool_file;
         private System.Windows.Forms.ToolStripMenuItem mn_import;
@@ -378,16 +405,8 @@ namespace SampleApp
         private System.Windows.Forms.ToolStripMenuItem font_big;
         private System.Windows.Forms.ToolStripMenuItem font_normal;
         private System.Windows.Forms.ToolStripMenuItem item_color;
+        private System.Windows.Forms.ToolStripMenuItem cl_pink;
+        private System.Windows.Forms.ToolStripMenuItem cl_blue;
         private System.Windows.Forms.ToolStripMenuItem mn_suwe;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Name;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Manual;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Selenium;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TA;
-        private System.Windows.Forms.DataGridViewTextBoxColumn OJTProject;
-        private System.Windows.Forms.DataGridViewTextBoxColumn OJT;
-        private System.Windows.Forms.DataGridViewTextBoxColumn FinalPoint;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Rating;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Remarks;
     }
 }
